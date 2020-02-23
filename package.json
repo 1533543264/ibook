@@ -1,0 +1,24 @@
+{
+  "name": "ibook",
+  "version": "1.0.0",
+  "description": "这是",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1533543264/ibook.git"
+  },
+  "keywords": [],
+  "author": "1533543264",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1533543264/ibook/issues"
+  },
+  "homepage": "https://github.com/1533543264/ibook#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {}
+}
