@@ -16,8 +16,9 @@
     color:red;
   }
   #width-validation-message,
-  #height-validation-message{
+  #height-validation-message,
+  #perimeter-validation-message{
     color:red;
-    margin-left:58px;
+    margin-left:60px;
     font-size:0.8em;
   }

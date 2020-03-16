@@ -6,25 +6,39 @@
   <link rel="stylesheet" href="./rectangle.css">
 </head>
 <body>
-<div class="rectangle">
-    <label>宽度：</label>
-    <input id="width" type="text" autofocus>
-    <span>*</span>
+
+<div class="rectangle" style="background-image:url('7.png');width: 1040px;height: 600px;background-size:100% 100%;">
+    <div style="padding-top: 150px;margin-left: 560px;">
+    <label>用户名</label>
+    <input id="width"  name='username' type="text" autofocus required  placeholder="请设置用户名">
     <br>
-    <div id='width-validation-message' ></div>
-    <label>高度：</label>
-    <input id="height" type="text">
-    <span>*</span>
+    <div id='width-validation-message' name='phone'></div>
+    <label>手机号</label>
+    <input id="height" type="text" maxlength="11" autofocus required  placeholder="请输入您的电话号码" >
     <br>
     <div id='height-validation-message'></div>
-    <input id="calculate" type="button" value="计算">
+    <label>密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+    <input id="perimeter" type="text" maxlength="11" autofocus required placeholder="请设置登陆密码">
     <br>
-    <label>周长：</label>
-    <input id="perimeter" type="text" disabled>
-    <br>
-    <label>面积：</label>
-    <input id="area" type="text" disabled>
+    <div id='perimeter-validation-message'></div>
+   
+    <div>
+    <label>验证码</label>
+    <input type="text" name="textfield" placeholder="请输入验证码"   autofocus="autofocus" required  onChange="checkkeyword1()" id="dd" title="为了您方便随便填即可，发送时间设置为6s"  maxlength="4" minlength="4">
+    </div>
+    <div style="margin-top: -39px;margin-left: 270px;">
+        <input   type="button" id="btn" value="获取验证码" onclick="settime(this)"  />     
+    </div>
+    <p style="opacity: 0;color: red;font-size: 15px;margin-left: 60px;margin-top: -5px;" id='sn' > 请求超时，请稍后再试</p>
+    <input id="calculate" type="button" style=" width: 170px;background-color: blue;" value="注册"/>  
+  </div>
 </div>
+    <script>
+ 
+    
+
+
+    </script>
     <script  src='//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'></script>
     <script  src='./rectangle.js'></script>
 </body>
