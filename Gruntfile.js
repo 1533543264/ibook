@@ -1,10 +1,17 @@
 /* global module: true */
 module.exports = function(grunt) {
     grunt.initConfig({
-        uglify:{
-            'hello1.js':'hello.js'
-        }
+       htmlmin:{
+           options:{
+               removeComments:true,
+               collapseWhitespace:true
+           },
+           files:{
+               src:'./2.html',
+               dest:'./3.html'
+           }
+       }
     });
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.registerTask('default',['uglify']);
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.registerTask('default',['htmlmin']);
 };
