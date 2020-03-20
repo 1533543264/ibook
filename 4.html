@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+        <p style="margin-left: 250px;">2020语言排行榜</p>
+      <div id="example"></div>
+</head>
+<body>
+        <div id="main" style="width: 600px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+     
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: 'JavaScript语言排名变化'
+                },
+                tooltip: {},
+                legend: {
+                    data:['销量']
+                },
+                xAxis: {
+                  type: 'category',
+                    data: ["2000","2005","2010","2015","2020"]
+                },
+                yAxis: {type: 'value'},
+                series: [{
+                    name: '排名',
+                    type: 'line',
+                    data: [6, 9, 8, 8, 7]
+                }]
+            };
+     
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        </script>
+
+</body>
+<script src="node_modules/handsontable-pro/dist/handsontable.full.min.js" licenseKey=" non-commercial-and-evaluation"></script>
+<link href="node_modules/handsontable-pro/dist/handsontable.full.min.css" rel="stylesheet" media="screen" licenseKey=" non-commercial-and-evaluation">
+
+<script>
+
+var data = [
+
+["Java"             , 1, "降"," -0.01%"],
+["C"                , 2, "升"," +2.44%"],
+["Pyhon"            , 3, "升", "+1.41%"],
+["C++"              , 4, "降", "-2.58%"],
+["C#"               , 5, "升"," +2.07%"],
+["Visual Basic.NET" , 6, "降", "-1.17%"],
+["JavaScript"       , 7, "降", "-0.85%"]
+];
+
+var container = document.getElementById('example');
+var hot = new Handsontable(container, {
+data: data,
+
+colHeaders: ["语言名称", "排名", "升或降", "变化幅度"],
+
+className:'htCenter htMiddle',
+colWidths: 155,
+});
+    
+</script>
+
+</html>
