@@ -20,7 +20,8 @@
                 title: {
                     text: 'JavaScript语言排名变化'
                 },
-                tooltip: {},
+                tooltip: {trigger:'axis',
+formatter:'<div style="text-align:center">{a} <br/> {b} : {c}</div>'},
                 legend: {
                     data:['销量']
                 },
@@ -66,7 +67,7 @@
         data: data,
         
         colHeaders: ["语言名称", "排名", "升或降", "变化幅度"],
-        
+        licenseKey: 'non-commercial-and-evaluation',
         className:'htCenter htMiddle',
         colWidths: 155,
         });
