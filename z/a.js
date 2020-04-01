@@ -33,19 +33,19 @@ var $bans=(function(){
        +'</span>'
       +'<div>'
       + '<ul class="nav" id="navs">'
-      +   '<li class="active"> '
+      +   '<li class="active" id="q1"> '
       +' 1'
       +'</li>'
-      +   '<li>'
+      +   '<li id="q2">'
       + '2'
       +'</li>'
-      +   '<li> '
+      +   '<li id="q3"> '
       + '3'
       +'</li>'
-      +   '<li> '
+      +   '<li id="q4"> '
       + '4'
       +'</li>'
-      +   '<li> '
+      +   '<li id="q5"> '
       + '5'
       +'</li>'
        +   '</ul>'
@@ -67,7 +67,36 @@ var $bans=(function(){
     var number = 1;
     var vv='#navs'
 var sixthouasnd=6000;
-
+$('#q1').click(
+function(){
+  x();
+  number=2;
+}
+)
+$('#q2').click(
+  function(){
+    x();
+    number=3;
+  }
+  )
+  $('#q3').click(
+    function(){
+      x();
+      number=4;
+    }
+    )
+    $('#q4').click(
+      function(){
+        x();
+        number=5;
+      }
+      )
+      $('#q5').click(
+        function(){
+          x();
+          number=6;
+        }
+        )
     $('#left').click( 
      /* i--;
       if (i==-1) {
