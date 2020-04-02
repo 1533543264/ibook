@@ -69,32 +69,37 @@ var $bans=(function(){
 var sixthouasnd=6000;
 $('#q1').click(
 function(){
-  x();
   number=2;
+  x();
+
 }
 )
 $('#q2').click(
   function(){
+       number=3;
     x();
-    number=3;
+ 
   }
   )
   $('#q3').click(
     function(){
+       number=4;
       x();
-      number=4;
+     
     }
     )
     $('#q4').click(
       function(){
+           number=5;
         x();
-        number=5;
+     
       }
       )
       $('#q5').click(
         function(){
+             number=6;
           x();
-          number=6;
+       
         }
         )
     $('#left').click( 
