@@ -1,0 +1,13 @@
+body {
+    font-family: 微软雅黑;
+    line-height: 2em;
+    margin: 0;
+    font-size: 1.2em
+}
+
+.main {
+    width: 360px;
+    margin: 20px auto 0;
+    padding: 20px 20px;
+    position: relative
+}
